@@ -1,18 +1,21 @@
 import React, { PropTypes } from 'react'
 
-const ShowCard = ({ show }) => (
+const ShowCard = ({ poster, title, year, description }) => (
   <div className='show-card'>
-    <img src={`/public/img/posters/${show.poster}`} />
+    <img src={`/public/img/posters/${poster}`} />
     <div>
-      <h3>{show.title}</h3>
-      <h4>({show.year})</h4>
-      <p>{show.description}</p>
+      <h3>{title}</h3>
+      <h4>({year})</h4>
+      <p>{description}</p>
     </div>
   </div>
 )
 
 ShowCard.propTypes = {
-  show: PropTypes.object.isRequired
+  poster: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }
 
 export default ShowCard
