@@ -18,4 +18,8 @@ ShowCard.propTypes = {
   description: PropTypes.string.isRequired
 }
 
+// this is for jest coverage not to break tests
+// see https://github.com/facebook/jest/issues/2261
+ShowCard.displayName = 'ShowCard'
+
 export default ShowCard
