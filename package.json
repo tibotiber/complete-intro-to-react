@@ -11,8 +11,7 @@
     "build": "webpack",
     "dev": "webpack-dev-server --host 0.0.0.0 --inline",
     "lint": "eslint js/**/*.js server.js",
-    "watch": "webpack --watch",
-    "test": "NODE_ENV=test jest"
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "axios": "0.15.2",
